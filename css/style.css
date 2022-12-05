@@ -21,3 +21,20 @@ h1 {
 .imgs {
     font-size: 10px;
 }
+
+table {
+    width: 100%;
+}
+
+thead {
+    background-color: #4EA0FF;
+}
+
+th {
+    color: white;
+    width: 33.3%;
+}
+
+.lightblue-row {
+    background-color: #B1E5F2;
+}
