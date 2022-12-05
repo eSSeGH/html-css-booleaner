@@ -1,4 +1,11 @@
 .header-style {
-    background-color: red;
+    background-image: url(../img/pattern.png);
+    background-color: #4EA0FF;
+    background-size: 50%;
+    height: 100px;
+}
+
+.logo {
+    border-top: solid 50px transparent;
 }
 
