@@ -9,3 +9,11 @@
     border-top: solid 50px transparent;
 }
 
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.grey {
+    color: grey;
+}
