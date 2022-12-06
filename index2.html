@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Booleaner - Bonus</title>
     <link rel="stylesheet" href="./css/style2.css">
 </head>
 
@@ -12,14 +12,16 @@
 
     <header>
         
-            <div class="header-style">
+        <div class="header-style">
 
-                <div class="logo">
-                    <img src="img/logo.svg" alt="logo the booleaner"  style="height: 50px;">
-                </div>
+             <div class="logo">
+                <img src="img/logo.svg" alt="logo the booleaner"  style="height: 50px;">
+             </div>
                 
-            </div>
-        
+        </div>
+        <!-- considera che avere dei tag vuoti non è semanticamente corretto
+        ma ui avevi usato un secondo div per evitare di usare il padding
+        di cui non avevamo ancora parlato -->
     </header>
 
     <!-- inizio main -->
@@ -28,13 +30,14 @@
         <!-- titolo e info -->
         <section>
 
-            <h1>Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</h1>
-            <span class="grey">
+            <h1 class="title">Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</h1>
+            
+            <address class="grey">
                 Scritto da 
-                <span style="color: blue;">The Booleaners</span> 
+                <strong style="color: blue;">The Booleaners</strong> 
                 <br>
-                <span style="font-size: 10px;">il 10/10/2020</span>
-            </span>
+                <time datetime="2020-10-10" style="font-size: 10px;">il 10/10/2020</time>
+            </address>
 
         </section>
 
@@ -51,7 +54,7 @@
         </section>
 
         <!-- articolo -->
-        <section class="article">
+        <article>
 
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -102,7 +105,7 @@
 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum eum modi nihil neque! Dolor dolorem inventore pariatur quo esse recusandae vel voluptatum sint? Reprehenderit velit illo neque fugit unde similique, cupiditate perspiciatis consequuntur molestias soluta quia quibusdam dolorum animi optio, nulla, in odio earum corporis quas veritatis accusamus totam ullam.</p>
 
-        </section>
+        </article>
 
     </main>
     <!-- fine main -->

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Booleaner</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -19,6 +19,9 @@
                 </div>
                 
             </div>
+            <!-- considera che avere dei tag vuoti non è semanticamente corretto
+        ma ui avevi usato un secondo div per evitare di usare il padding
+        di cui non avevamo ancora parlato -->
         
     </header>
 
@@ -26,54 +29,54 @@
     <main>
 
         <!-- titolo e info -->
-        <section>
+        <header>
 
-            <h1>Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</h1>
-            <span class="grey">
+            <h1 class="title">Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</h1>
+            
+            <address class="author-info">
                 Scritto da 
-                <span style="color: blue;">The Booleaners</span> 
+                <a href="#">The Booleaners</a> 
                 <br>
-                <span style="font-size: 10px;">il 10/10/2020</span>
-            </span>
+                <time datetime="2020-10-10" style="font-size: 10px;">il 10/10/2020</time>
+            </address>
 
-        </section>
+        </header>
 
         <!-- immagini di tim berners -->
-        <section class="imgs">
+        <figure>
 
             <img src="./img/tim-1.jpg" alt="tim knight foundation speech">
             <img src="./img/tim-2.jpg" alt="tim first person shoot">
-            <br>
-            <span>1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen</span>
-            <br>
-            <span>2nd Photo: Wikimedia, by Paul Clarke</span>
+            
+            <figcaption>
+                1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen<br>
+                2nd Photo: Wikimedia, by Paul Clarke
+            </figcaption>
 
-        </section>
+        </figure>
 
         <!-- articolo -->
         <section class="article">
 
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                <span style="background-color: yellow;">Itaque dignissimos alias fuga illum,</span> 
+                <mark>Itaque dignissimos alias fuga illum,</mark> 
                 iusto earum nostrum, voluptas, ipsum laudantium dolorum ipsa! Consequuntur impedit recusandae voluptates voluptatibus, accusantium sint quod maxime, facilis praesentium excepturi repellat optio totam qui? Provident libero dolores velit numquam tenetur cumque eos laborum, commodi ipsum, quod repellendus? Molestias temporibus perferendis magnam! Laborum aliquid, incidunt nemo veniam ea enim facere reiciendis saepe quam, rerum provident eligendi perferendis voluptatem. Pariatur, laborum voluptatibus. Saepe blanditiis possimus libero natus exercitationem esse voluptates tempore quaerat. Tenetur laboriosam illum iure recusandae. Animi corporis ullam quis placeat dolor sint assumenda reiciendis voluptates! Veritatis, id?
             </p>
             
             <ul>
-
                 <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, placeat tenetur accusantium consequatur fugit voluptate amet obcaecati, numquam, totam alias dolore facere.</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque, error dolor officia illum minus itaque sint reiciendis natus nulla architecto.</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi dolores commodi beatae fugiat perspiciatis, minus recusandae doloribus magni odit iusto optio. </li>
-
             </ul>      
             
             <!-- tabella -->
             <table>
 
-                <thead>
-                    <th>Lorem, ipsum dolor.</th>
-                    <th>Lorem, ipsum dolor.</th>
-                    <th>Lorem, ipsum dolor.</th>
+                <thead class="table-heading">
+                    <th class="w-25">Lorem, ipsum dolor.</th>
+                    <th class="w-25">Lorem, ipsum dolor.</th>
+                    <th class="w-50">Lorem, ipsum dolor.</th>
                 </thead>
 
                 <tbody>
@@ -100,7 +103,7 @@
 
             </table>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum eum modi nihil neque! Dolor dolorem inventore pariatur quo esse recusandae vel voluptatum sint? Reprehenderit velit illo neque fugit unde similique, cupiditate perspiciatis consequuntur molestias soluta quia quibusdam dolorum animi optio, nulla, in odio earum corporis quas veritatis accusamus totam ullam.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum eum modi nihil neque! Dolor dolorem inventore pariatur <mark> quo esse recusandae vel voluptatum sint?</mark> Reprehenderit velit illo neque fugit unde similique, cupiditate perspiciatis consequuntur molestias soluta quia quibusdam dolorum animi optio, nulla, in odio earum corporis quas veritatis accusamus totam ullam.</p>
 
         </section>
 
@@ -109,19 +112,15 @@
 
     <footer>
 
-        <span class="grey">Potrebbero interessarti</span>
-        <br>
+        <h3 class="grey">Potrebbero interessarti</h3>
 
-        <div class="footer-img">
+        <article style="background-image: url(./img/monitor.jpg);" class="art-rect">
+            Lorem, ipsum dolor.
+        </article>
 
-            <div class="monitor">
-                Lorem, ipsum dolor.
-            </div>
-            <div class="graph">
-                Lorem, ipsum dolor.
-            </div>
-
-        </div>
+        <article style="background-image: url(./img/graph.jpg);" class="art-rect">
+            Lorem, ipsum dolor.
+        </article>
      
     </footer>
 

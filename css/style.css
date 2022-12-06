@@ -1,7 +1,7 @@
 .header-style {
     background-image: url(../img/pattern.png);
     background-color: #4EA0FF;
-    background-size: 30%;
+    background-size: 400px;
     height: 100px;
 }
 
@@ -9,48 +9,90 @@
     border-top: solid 50px transparent;
 }
 
-h1 {
+.title {
     font-family:'Times New Roman', Times, serif;
     font-weight: bolder;
+    font-size: 48px;
+
+    color: currentColor;
+    text-decoration: none;
+    /* ueste 2 regole servono per 
+    resettare le regole dello
+    user agent */
 }
 
-.grey {
+.author-info {
     color: grey;
+    font-size: 20px;
+    font-style: normal;
 }
 
-.imgs {
+.author-info time{
+    font-size: 16px;
+}
+
+.author-info a{
+    color: blue;
+}
+
+figcaption {
     font-size: 10px;
+}
+
+mark {
+    background-color: yellow;
+}
+
+ul {
+    padding-left: 20px;
 }
 
 table {
     width: 100%;
+    border-collapse: collapse;
+    /* elimina i bordi delle celle */
 }
 
-thead {
+.table-heading {
     background-color: #4EA0FF;
+    text-align: left;
+    color: white;
 }
 
-th {
-    color: white;
-    width: 33.3%;
+.w-25 {
+    width: 25%
 }
+
+.w-50 {
+    width: 50%
+}
+
+/* l'approccio in cui si creano le classi 
+molto elementari il cui nome descrive una
+caratteristica ad hoc per gli elementi, si
+chiama UTILITY FIRST */
 
 .lightblue-row {
     background-color: #B1E5F2;
 }
 
-.monitor {
-    background-image: url(../img/monitor.jpg);
+.art-rect {
     height: 208px;
     width: 312px;
     color: white;
     font-size: 25px;
+    margin-top: 5px;
+}
+
+/* .monitor {
+    background-image: url(../img/monitor.jpg);
 }
 
 .graph {
     background-image: url(../img/graph.jpg);
-    height: 207px;
-    width: 311px;
-    color: white;
-    font-size: 25px;
 }
+
+è meglio inserire il link
+per la foto direttamente in html
+tanto sono sempre specifici per 
+uelle immagini */
